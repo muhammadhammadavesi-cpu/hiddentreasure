@@ -36,11 +36,20 @@ body::before {
     z-index: -1;
 }
 
+#big-cont{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+    
 .container {
     position: relative;
     width: 350px;
     height: 450px;
-    margin: 50px auto;
+    /* margin: 50px auto; */
 }
 
 .photo {
@@ -121,8 +130,6 @@ body::before {
     .container {
         width: 60%;
         height: 40vh;
-        margin: 50% 20% 30% 20%;
-        overflow: hidden;
     }
 
     .photo {
@@ -171,6 +178,8 @@ body::before {
 
 <body>
 
+<div id="big-cont">
+    
 <div class="container">
 
     <div class="photo">
@@ -199,7 +208,9 @@ body::before {
     </div>
 
 </div>
+</div>
 
+    
 <script>
 const notes = document.querySelectorAll('.note');
 
